@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Concurso TrybeTrip</h1>
-    <form action="" method="get" enctype="multipart/form-data"></form>
-    <label for="nome-completo">Nome:
-        <input type="text" minlength="10" maxlength="40" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
-    </label>
-    <br>
-    <label for="e-mail">E-mail:
-        <input type="email" minlength="10" maxlength="50" name="email" id="e-mail" required>
-    </label>
-    <fieldset>
-        <legend>Destino preferido</legend>
-        <input type="radio" name="destino" id="cidade">
-        <label for="cidade">Cidade</label>
-        <input type="radio" name="destino" id="campo">
-        <label for="campo">Campo</label>
-        <input type="radio" name="destino" id="praia">
-        <label for="praia">Praia</label>
-        <input type="radio" name="destino" id="montanha">
-        <label for="montanha">Montanha</label>
-    </fieldset>
-    <label for="porque">Porque você deveria ganhar:
-        <textarea name="porque" id="porque" cols="30" rows="10"></textarea>
-    </label>
-    <br>
-    <label for="melhor-data">Melhor data para viagem:
-        <input type="date" name="data" id="melhor-data">
-    </label>
+    <form action="" method="get" enctype="multipart/form-data">
+        <label for="nome-completo">Nome:
+            <input type="text" minlength="10" maxlength="40" name="nome" id="nome-completo"
+                placeholder="Digite seu nome" required>
+        </label>
+        <br>
+        <label for="e-mail">E-mail:
+            <input type="email" minlength="10" maxlength="50" name="email" id="e-mail" required>
+        </label>
+        <fieldset>
+            <legend>Destino preferido</legend>
+            <input type="radio" name="destino" id="cidade">
+            <label for="cidade">Cidade</label>
+            <input type="radio" name="destino" id="campo">
+            <label for="campo">Campo</label>
+            <input type="radio" name="destino" id="praia">
+            <label for="praia">Praia</label>
+            <input type="radio" name="destino" id="montanha">
+            <label for="montanha">Montanha</label>
+        </fieldset>
+        <label for="porque">Porque você deveria ganhar:
+            <textarea name="porque" id="porque" cols="30" rows="10"></textarea>
+        </label>
+        <br>
+        <label for="melhor-data">Melhor data para viagem:
+            <input type="date" name="data" id="melhor-data">
+        </label>
+        <br>
+        <input type="checkbox" name="oportunidades" id="oportunidades">
+        <label for="oportunidades">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <br>
+        <input type="checkbox" name="usoimagem" id="uso-imagem">
+        <label for="uso-iamgem">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos
+            futuros.</label>
+        <br>
+        <button type="submit" id="enviar">Enviar</button>
+        <button type="reset" id="limpar">Limpar</button>
+    </form>
+    <script src="script.js"></script>
 </body>
+
 </html>
