@@ -1,0 +1,27 @@
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+// Seu código aqui.
+const ordenar = array => {
+    for (let index = 1; index < array.length; index += 1) {
+        for (let secondIndex = 0; secondIndex < index; secondIndex += 1) {
+            if (array[index] < array[secondIndex]) {
+                let position = array[index];
+                array[index] = array[secondIndex];
+                array[secondIndex] = position;
+            }
+        }
+    }
+    return array;
+}
+
+const exibeArray = array => {
+    let string = array[0];
+    for (let index = 1; index < array.length; index += 1) {
+        string = `${string},${array[index]}`;
+    }
+    return string;
+}
+
+// console.log(oddsAndEvens.sort((a, b) => a - b));
+console.log(`Os números ${exibeArray(oddsAndEvens.sort((a, b) => a - b))} se encontram ordenados de forma crescente!`);
+console.log(`Os números ${exibeArray(ordenar(oddsAndEvens))} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha
